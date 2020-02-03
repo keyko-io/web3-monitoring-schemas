@@ -1,0 +1,27 @@
+description: |
+  # Introduction
+  The PK will expose some external API’s to interact with the module. Those
+  API’s could be integrated in different ways (RESTful, RPC, Pub/Sub). In
+  this section we will describe the RESTful interface as main reference.
+  Additional definitions will be added posteriorly.
+
+  The PK API will be the interface between the platform consumers and the
+  underlying business logic implemented by the Keeper. The capabilities to
+  implement are quite different and can be divided in independent domains.
+  The service layer will organize the code in independent resources
+  implementing the different business domains, encapsulating the complexity
+  of those domains.
+
+  The implementation of the RESTful API must be HATEOAS compliance. It means
+  the requirement is to implement the Richardson Maturity Model Level 3.
+
+  The most relevant domains and microservices to be implemented are
+
+  * Actors RESTful API
+  * Assets RESTful API
+  * Curation RESTful API
+  * Market RESTful API
+  * Verification RESTful API
+  * Search RESTful API
+version: 0.0.1
+title: ProtoKeeper Services

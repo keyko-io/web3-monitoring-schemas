@@ -1,0 +1,25 @@
+post:
+  tags:
+    - asset
+  summary: Register an asset
+  description: |
+    Registering of an Asset (dataset or service). Metadata is provided,
+    including the verification proofs. Should return a HTTP 201 if everything
+    goes OK, HTTP 422 if object already exists or HTTP 500 if error.
+
+  operationId: registerAsset
+  produces:
+    - application/xml
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      description: Registered metadata object
+      required: true
+      schema:
+        $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.Metadata'
+  responses:
+    '201':
+      description: successful operation
+      schema:
+        $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.Metadata'

@@ -1,0 +1,25 @@
+post:
+  tags:
+    - verification
+  summary: Verification challenge
+  description: |
+    Verification challenge about service provided.
+    A pre-appointed verifier and/or the client challenges the service
+    to provide proofs that the requested service is delivered according
+    to integrity specifications.
+  operationId: createVerificationRequest
+  produces:
+    - application/xml
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      description: Verification request object to create
+      required: true
+      schema:
+        $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.VerificationRequest'
+  responses:
+    '201':
+      description: successful operation
+      schema:
+        $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.VerificationRequest'

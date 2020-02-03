@@ -1,0 +1,12 @@
+# record:com.oceanprotocol.core.keeper.models.ContractSettlement
+# ContractSettlement
+type: object
+required:
+- warrantiesDescription
+- fee
+additionalProperties: false
+properties:
+  warrantiesDescription:
+    type: string
+  fee:
+    type: number

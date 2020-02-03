@@ -1,0 +1,24 @@
+get:
+  tags:
+    - verification
+  summary: Get verification proof
+  description: ''
+  operationId: getProofById
+  produces:
+    - application/xml
+    - application/json
+  parameters:
+    - name: proofId
+      in: path
+      description: 'The id of the proof that needs to be fetched.'
+      required: true
+      type: string
+  responses:
+    '200':
+      description: successful operation
+      schema:
+        $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.VerificationProof'
+    '400':
+      description: Invalid proof id supplied
+    '404':
+      description: Proof not found

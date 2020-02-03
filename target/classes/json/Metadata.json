@@ -1,0 +1,180 @@
+{
+    "record:com.oceanprotocol.core.keeper.models.Metadata" : {
+      "type" : "object",
+      "required" : [ "metadataId", "publisherId", "name", "marketplaceId", "creationDatetime", "updateDatetime", "contentType", "proofType", "mimeType", "parameters", "marketplaceAttributes", "attributes", "verificationProofs", "prices" ],
+      "additionalProperties" : false,
+      "properties" : {
+        "metadataId" : {
+          "type" : "string"
+        },
+        "publisherId" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "marketplaceId" : {
+          "oneOf" : [ {
+            "type" : "null"
+          }, {
+            "type" : "string"
+          } ]
+        },
+        "creationDatetime" : {
+          "type" : "integer",
+          "minimum" : -9223372036854775808,
+          "maximum" : 9223372036854775807
+        },
+        "updateDatetime" : {
+          "type" : "integer",
+          "minimum" : -9223372036854775808,
+          "maximum" : 9223372036854775807
+        },
+        "contentType" : {
+          "$ref" : "#/definitions/enum:com.oceanprotocol.core.keeper.models.ContentType"
+        },
+        "proofType" : {
+          "$ref" : "#/definitions/enum:com.oceanprotocol.core.keeper.models.ProofType"
+        },
+        "mimeType" : {
+          "oneOf" : [ {
+            "type" : "null"
+          }, {
+            "type" : "string"
+          } ]
+        },
+        "parameters" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/record:com.oceanprotocol.core.keeper.models.MetadataParameters"
+          }
+        },
+        "marketplaceAttributes" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/record:com.oceanprotocol.core.keeper.models.MetadataMarketplaceAttributes"
+          }
+        },
+        "attributes" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/record:com.oceanprotocol.core.keeper.models.MetadataAttribute"
+          }
+        },
+        "verificationProofs" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/record:com.oceanprotocol.core.keeper.models.AssetVerificationProof"
+          }
+        },
+        "prices" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/record:com.oceanprotocol.core.keeper.models.AssetPrice"
+          }
+        }
+      }
+    },
+    "enum:com.oceanprotocol.core.keeper.models.ContentType" : {
+      "enum" : [ "ASSET", "SERVICE" ]
+    },
+    "enum:com.oceanprotocol.core.keeper.models.ProofType" : {
+      "enum" : [ "POC", "POW", "POS", "POR", "POST" ]
+    },
+    "record:com.oceanprotocol.core.keeper.models.MetadataParameters" : {
+      "type" : "object",
+      "required" : [ "name", "value" ],
+      "additionalProperties" : false,
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "string"
+        }
+      }
+    },
+    "record:com.oceanprotocol.core.keeper.models.MetadataMarketplaceAttributes" : {
+      "type" : "object",
+      "required" : [ "name", "value" ],
+      "additionalProperties" : false,
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "string"
+        }
+      }
+    },
+    "record:com.oceanprotocol.core.keeper.models.MetadataAttribute" : {
+      "type" : "object",
+      "required" : [ "name", "description" ],
+      "additionalProperties" : false,
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      }
+    },
+    "record:com.oceanprotocol.core.keeper.models.AssetVerificationProof" : {
+      "type" : "object",
+      "required" : [ "verificationId", "name", "agreement", "description", "expectedResult" ],
+      "additionalProperties" : false,
+      "properties" : {
+        "verificationId" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "agreement" : {
+          "type" : "string"
+        },
+        "description" : {
+          "oneOf" : [ {
+            "type" : "null"
+          }, {
+            "type" : "string"
+          } ]
+        },
+        "expectedResult" : {
+          "type" : "string"
+        }
+      }
+    },
+    "record:com.oceanprotocol.core.keeper.models.AssetPrice" : {
+      "type" : "object",
+      "required" : [ "name", "scheme", "agreement", "description", "quantity", "price" ],
+      "additionalProperties" : false,
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "scheme" : {
+          "type" : "string"
+        },
+        "agreement" : {
+          "type" : "string"
+        },
+        "description" : {
+          "oneOf" : [ {
+            "type" : "null"
+          }, {
+            "type" : "string"
+          } ]
+        },
+        "quantity" : {
+          "type" : "integer",
+          "minimum" : -2147483648,
+          "maximum" : 2147483647
+        },
+        "price" : {
+          "type" : "number"
+        }
+      }
+    }
+}

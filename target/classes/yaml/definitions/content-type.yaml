@@ -1,0 +1,5 @@
+# enum:com.oceanprotocol.core.keeper.models.ContentType
+# ContentType
+enum:
+- ASSET
+- SERVICE

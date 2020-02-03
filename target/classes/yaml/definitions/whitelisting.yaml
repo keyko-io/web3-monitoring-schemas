@@ -1,0 +1,23 @@
+# record:com.oceanprotocol.core.keeper.models.Whitelisting
+# Whitelisting
+type: object
+required:
+- actorId
+- verifierId
+- whitelistingApproval
+- creationDatetime
+- stake
+additionalProperties: false
+properties:
+  actorId:
+    type: string
+  verifierId:
+    type: string
+  whitelistingApproval:
+    type: boolean
+  creationDatetime:
+    type: integer
+    minimum: -9223372036854775808
+    maximum: 9223372036854775807
+  stake:
+    type: number

@@ -1,0 +1,20 @@
+post:
+  tags:
+    - contract 
+  summary: Register a contract
+  description: |
+    Registering of a Contract.
+  operationId: registerContract
+  produces:
+    - application/xml
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      description: Registered registerContract object
+      required: true
+      schema:
+        $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.Contract'
+  responses:
+    default:
+      description: successful operation

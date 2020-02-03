@@ -1,0 +1,21 @@
+post:
+  tags:
+    - curation 
+  summary: Curate an asset
+  description: ''
+  operationId: curateAsset
+  produces:
+    - application/xml
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      description: Curation object
+      required: true
+      schema:
+        $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.Curation'
+  responses:
+    '201':
+      description: successful operation
+      schema:
+        $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.Curation'

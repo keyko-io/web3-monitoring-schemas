@@ -1,0 +1,13 @@
+type: object
+required:
+- verificationProofId
+- verificationProof
+- proofStatus
+additionalProperties: false
+properties:
+  verificationProofId:
+    type: string
+  verificationProof:
+    type: string
+  proofStatus:
+    $ref: '#/definitions/enum:com.oceanprotocol.core.keeper.models.ProofStatus'

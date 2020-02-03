@@ -1,0 +1,40 @@
+# record:com.oceanprotocol.core.keeper.models.Contract
+# Contract
+type: object
+required:
+- contractId
+- matchId
+- providerId
+- clientId
+- metadataId
+- contractState
+- creationDatetime
+- verificationProofs
+- contractSettlement
+- contractResolution
+additionalProperties: false
+properties:
+  contractId:
+    type: string
+  matchId:
+    type: string
+  providerId:
+    type: string
+  clientId:
+    type: string
+  metadataId:
+    type: string
+  contractState:
+    $ref: '#/definitions/enum:com.oceanprotocol.core.keeper.models.ContractState'
+  creationDatetime:
+    type: integer
+    minimum: -9223372036854775808
+    maximum: 9223372036854775807
+  verificationProofs:
+    type: array
+    items:
+      $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.ContractVerificationProof'
+  contractSettlement:
+    $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.ContractSettlement'
+  contractResolution:
+    ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.ContractResolution'

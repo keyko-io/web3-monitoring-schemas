@@ -1,0 +1,12 @@
+# record:com.oceanprotocol.core.keeper.models.MetadataMarketplaceAttributes
+# MetadataMarketplaceAttributes
+type: object
+required:
+- name
+- value
+additionalProperties: false
+properties:
+  name:
+    type: string
+  value:
+    type: string

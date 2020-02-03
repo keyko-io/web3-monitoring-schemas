@@ -1,0 +1,39 @@
+{
+    "record:com.oceanprotocol.core.keeper.models.VerificationRequest" : {
+      "type" : "object",
+      "required" : [ "verificationRequestId", "contractId", "validatorId", "creationDatetime", "proofs" ],
+      "additionalProperties" : false,
+      "properties" : {
+        "verificationRequestId" : {
+          "type" : "string"
+        },
+        "contractId" : {
+          "type" : "string"
+        },
+        "validatorId" : {
+          "type" : "string"
+        },
+        "creationDatetime" : {
+          "type" : "integer",
+          "minimum" : -9223372036854775808,
+          "maximum" : 9223372036854775807
+        },
+        "proofs" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/record:com.oceanprotocol.core.keeper.models.ProofsList"
+          }
+        }
+      }
+    },
+    "record:com.oceanprotocol.core.keeper.models.ProofsList" : {
+      "type" : "object",
+      "required" : [ "verificationProofId" ],
+      "additionalProperties" : false,
+      "properties" : {
+        "verificationProofId" : {
+          "type" : "string"
+        }
+      }
+    }
+}

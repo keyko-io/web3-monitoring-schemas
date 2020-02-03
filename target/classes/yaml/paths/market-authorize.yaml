@@ -1,0 +1,27 @@
+post:
+  tags:
+    - market
+  summary: Authorization for asset consumption
+  description: |
+    The publisher authorizes the consumption of an asset by a consumer.
+  operationId: registerAsset
+  produces:
+    - application/xml
+    - application/json
+  parameters:
+    - name: contractId
+      in: path
+      description: 'The id of the contract for which authorization is granted.'
+      required: true
+      type: string
+    - in: body
+      name: body
+      description: Contract used for authorization
+      required: true
+      schema:
+        $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.Contract'
+  responses:
+    '201':
+      description: successful operation
+      schema:
+        $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.Contract'

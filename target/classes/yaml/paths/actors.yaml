@@ -1,0 +1,25 @@
+#/actors:
+post:
+  tags:
+    - actor
+  summary: Register an actor
+  description: |
+    As soon as an actor is allowed into the system, the metadata
+    describing what that actor is and does is appended to the Actor
+    Registry.
+  operationId: registerActor
+  produces:
+    - application/xml
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      description: Registered actor object
+      required: true
+      schema:
+        $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.Actor'
+  responses:
+    '201':
+      description: successful operation
+      schema:
+        $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.Actor'

@@ -1,0 +1,7 @@
+# enum:com.oceanprotocol.core.keeper.models.ContractState
+# ContractState
+enum:
+- DRAFT
+- SIGNED
+- SETTLED
+- CANCELED

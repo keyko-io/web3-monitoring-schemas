@@ -1,0 +1,66 @@
+# record:com.oceanprotocol.core.keeper.models.Metadata:
+# Metadata
+type: object
+required:
+- metadataId
+- publisherId
+- name
+- marketplaceId
+- creationDatetime
+- updateDatetime
+- contentType
+- proofType
+- mimeType
+- parameters
+- marketplaceAttributes
+- attributes
+- verificationProofs
+- prices
+additionalProperties: false
+properties:
+  metadataId:
+    type: string
+  publisherId:
+    type: string
+  name:
+    type: string
+  marketplaceId:
+    oneOf:
+    - type: 'null'
+    - type: string
+  creationDatetime:
+    type: integer
+    minimum: -9223372036854775808
+    maximum: 9223372036854775807
+  updateDatetime:
+    type: integer
+    minimum: -9223372036854775808
+    maximum: 9223372036854775807
+  contentType:
+    $ref: '#/definitions/enum:com.oceanprotocol.core.keeper.models.ContentType'
+  proofType:
+    $ref: '#/definitions/enum:com.oceanprotocol.core.keeper.models.ProofType'
+  mimeType:
+    oneOf:
+    - type: 'null'
+    - type: string
+  parameters:
+    type: array
+    items:
+      $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.MetadataParameters'
+  marketplaceAttributes:
+    type: array
+    items:
+      $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.MetadataMarketplaceAttributes'
+  attributes:
+    type: array
+    items:
+      $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.MetadataAttribute'
+  verificationProofs:
+    type: array
+    items:
+      $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.AssetVerificationProof'
+  prices:
+    type: array
+    items:
+      $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.AssetPrice'

@@ -1,0 +1,12 @@
+# record:com.oceanprotocol.core.keeper.models.MetadataParameters
+# MetadataParameters
+type: object
+required:
+- name
+- value
+additionalProperties: false
+properties:
+  name:
+    type: string
+  value:
+    type: string

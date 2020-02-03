@@ -1,0 +1,20 @@
+post:
+  tags:
+    - consumption
+  summary: Register a consumption
+  description: |
+    Registering of a Consumption, given a correct access token.
+  operationId: registerAsset
+  produces:
+    - application/xml
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      description: Registered Consumption object
+      required: true
+      schema:
+        $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.Consumption'
+  responses:
+    default:
+      description: successful operation

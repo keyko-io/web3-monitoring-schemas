@@ -1,0 +1,23 @@
+# record:com.oceanprotocol.core.keeper.models.AssetVerificationProof
+# AssetVerificationProof
+type: object
+required:
+- verificationId
+- name
+- agreement
+- description
+- expectedResult
+additionalProperties: false
+properties:
+  verificationId:
+    type: string
+  name:
+    type: string
+  agreement:
+    type: string
+  description:
+    oneOf:
+    - type: 'null'
+    - type: string
+  expectedResult:
+    type: string

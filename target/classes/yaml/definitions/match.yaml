@@ -1,0 +1,27 @@
+type: object
+required:
+- providerId
+- clientId
+- metadataId
+- bidId
+- creationDatetime
+- ask
+- bid
+additionalProperties: false
+properties:
+  providerId:
+    type: string
+  clientId:
+    type: string
+  metadataId:
+    type: string
+  bidId:
+    type: string
+  creationDatetime:
+    type: integer
+    minimum: -9223372036854775808
+    maximum: 9223372036854775807
+  ask:
+    type: number
+  bid:
+    type: number

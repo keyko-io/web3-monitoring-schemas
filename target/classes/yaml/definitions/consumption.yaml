@@ -1,0 +1,17 @@
+# record:com.oceanprotocol.core.keeper.models.Consumption
+# Consumption 
+type: object
+required:
+- contractId
+- creationDatetime
+- accessToken
+additionalProperties: false
+properties:
+  contractId:
+    type: string
+  creationDatetime:
+    type: integer
+    minimum: -9223372036854775808
+    maximum: 9223372036854775807
+  accessToken:
+    $ref: '#/definitions/record:com.oceanprotocol.core.keeper.models.AccessToken'
