@@ -1,9 +1,0 @@
-# record:com.oceanprotocol.core.keeper.models.ProofsListRequest
-# ProofsListRequest
-type: object
-required:
-- verificationProofId
-additionalProperties: false
-properties:
-  verificationProofId:
-    type: string

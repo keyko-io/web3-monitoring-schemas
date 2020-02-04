@@ -1,6 +1,0 @@
-# enum:com.oceanprotocol.core.keeper.models.ProofStatus
-# ProofStatus
-enum:
-- DEFINED
-- VERIFIED
-- FAILS

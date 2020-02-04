@@ -1,8 +1,0 @@
-# enum:com.oceanprotocol.core.keeper.models.ProofType
-# ProofType
-enum:
-- POC
-- POW
-- POS
-- POR
-- POST
