@@ -2,6 +2,9 @@
  
 Web3 Monitoring platform schemas definition in Avro format.
 
+![W3M Schemas Build](https://github.com/keyko-io/web3-monitoring-schemas/workflows/W3M%20Schemas%20Build/badge.svg)
+
+
 You can generate the ZIP including the avro schemas and the Java stubs using the following command:
 
 ```
