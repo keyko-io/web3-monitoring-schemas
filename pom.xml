@@ -8,6 +8,8 @@
     <artifactId>schemas</artifactId>
     <packaging>jar</packaging>
     <version>0.1.0</version>
+    <name>Web3 Monitoring Schemas</name>
+    <url>https://github.com/keyko-io/web3-monitoring-schemas</url>
 
     <description>
         Web3 Monitoring data models in AVRO format
@@ -21,6 +23,21 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>Keyko</name>
+            <email>root@keyko.io</email>
+            <organization>Keyko GmbH</organization>
+            <organizationUrl>https://www.keyko.io</organizationUrl>
+        </developer>
+    </developers>
+    
+    <scm>
+        <connection>scm:git:git://github.com/keyko-io/web3-monitoring-schemas.git</connection>
+        <developerConnection>scm:git:ssh://keyko-io/web3-monitoring-schemas.git</developerConnection>
+        <url>https://github.com/keyko-io/web3-monitoring-schemas/tree/master</url>
+    </scm>    
+    
     <properties>
         <java.version>11</java.version>
         <avro.version>1.9.1</avro.version>
@@ -176,6 +193,21 @@
             </executions>
           </plugin>
 
+          <!-- Javadoc plugin -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>3.1.1</version>
+            <executions>
+              <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          
           <!-- GPG plugin -->
           <plugin>
               <groupId>org.apache.maven.plugins</groupId>
