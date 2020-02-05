@@ -1,8 +1,0 @@
-# ActorType definition
-# enum:com.oceanprotocol.core.keeper.models.ActorType
-enum:
-- PUBLISHER
-- CONSUMER
-- MARKETPLACE
-- CURATOR
-- KEEPER
