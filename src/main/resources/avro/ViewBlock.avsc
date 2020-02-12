@@ -78,15 +78,6 @@
           },
 
           {
-            "name": "transactionHash",
-            "type": "string"
-          },
-          {
-            "name": "logIndex",
-            "type": "string",
-            "java-class": "java.math.BigInteger"
-          },
-          {
             "name": "blockNumber",
             "type": "string",
             "java-class": "java.math.BigInteger"
