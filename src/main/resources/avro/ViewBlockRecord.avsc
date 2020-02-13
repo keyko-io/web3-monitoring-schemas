@@ -1,0 +1,26 @@
+{
+	"namespace": "io.keyko.monitoring.schemas",
+	"type": "record",
+	"name": "ViewBlockRecord",
+	"fields": [{
+			"name": "id",
+			"type": "string"
+		},
+		{
+			"name": "type",
+			"type": "string"
+		},
+		{
+			"name": "details",
+			"type": "ViewDetailsRecord"
+		},
+		{
+			"name": "detailsBlock",
+			"type": "BlockDetailsRecord"
+		},
+		{
+			"name": "retries",
+			"type": "int"
+		}
+	]
+}

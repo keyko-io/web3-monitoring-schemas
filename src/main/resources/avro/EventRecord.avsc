@@ -1,0 +1,22 @@
+{
+	"namespace": "io.keyko.monitoring.schemas",
+	"type": "record",
+	"name": "EventRecord",
+	"fields": [{
+			"name": "id",
+			"type": "string"
+		},
+		{
+			"name": "type",
+			"type": "string"
+		},
+		{
+			"name": "details",
+			"type": "EventDetailsRecord"
+		},
+		{
+			"name": "retries",
+			"type": "int"
+		}
+	]
+}
