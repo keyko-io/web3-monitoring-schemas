@@ -26,8 +26,8 @@
 		},
 		{
 			"name": "timestamp",
-			"type": "string",
-			"java-class": "timestamp-millis"
+            "type": "long",
+			"logicalType": "timestamp-millis"
 		},
 		{
 			"name": "description",
