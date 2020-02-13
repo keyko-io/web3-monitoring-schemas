@@ -250,7 +250,7 @@
         <!-- Central Repository -->
         <repository>
             <id>release</id>
-            <url>https://repo1.maven.org/maven2/</url>
+            <url>https://oss.sonatype.org/content/repositories/releases</url>
         </repository>
         <snapshotRepository>
             <id>snapshot</id>
