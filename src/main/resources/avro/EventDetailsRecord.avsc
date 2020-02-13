@@ -1,0 +1,86 @@
+{
+	"namespace": "io.keyko.monitoring.schemas",
+	"type": "record",
+	"name": "EventDetailsRecord",
+	"fields": [
+
+		{
+			"name": "name",
+			"type": "string"
+		},
+		{
+			"name": "contractName",
+			"type": "string",
+			"default": ""
+		},
+		{
+			"name": "filterId",
+			"type": "string"
+		},
+		{
+			"name": "nodeName",
+			"type": "string"
+		},
+		{
+			"name": "indexedParameters",
+			"type": {
+				"type": "array",
+				"items": ["StringParameter", "NumberParameter"]
+			}
+		},
+
+		{
+			"name": "nonIndexedParameters",
+			"type": {
+				"type": "array",
+				"items": ["StringParameter", "NumberParameter"]
+			}
+		},
+		{
+			"name": "transactionHash",
+			"type": "string"
+		},
+		{
+			"name": "logIndex",
+			"type": "string",
+			"java-class": "java.math.BigInteger"
+		},
+		{
+			"name": "blockNumber",
+			"type": "string",
+			"java-class": "java.math.BigInteger"
+		},
+		{
+			"name": "blockHash",
+			"type": "string"
+		},
+		{
+			"name": "address",
+			"type": "string"
+		},
+		{
+			"name": "status",
+			"type": {
+				"name": "ContractEventStatus",
+				"type": "enum",
+				"symbols": [
+					"UNCONFIRMED",
+					"CONFIRMED",
+					"INVALIDATED"
+				]
+			}
+		},
+		{
+			"name": "eventSpecificationSignature",
+			"type": "string"
+		},
+		{
+			"name": "networkName",
+			"type": "string"
+		},
+		{
+			"name": "id",
+			"type": "string"
+		}
+	]
+}

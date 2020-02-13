@@ -1,6 +1,14 @@
 History
 =======
 
+0.2.0 (2020-02)
+------------------
+
+* Schemas naming refactor
+* Timestamp is now timestamp-millis
+* Added contractName in Event and View schemas
+
+
 0.1.2 (2020-02)
 ------------------
 

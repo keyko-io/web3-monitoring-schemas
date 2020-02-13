@@ -1,0 +1,19 @@
+{
+	"namespace": "io.keyko.monitoring.schemas",
+	"name": "NumberParameter",
+	"type": "record",
+	"fields": [{
+			"name": "name",
+			"type": "string"
+		},
+		{
+			"name": "type",
+			"type": "string"
+		},
+		{
+			"name": "value",
+			"type": "string",
+			"java-class": "java.math.BigInteger"
+		}
+	]
+}

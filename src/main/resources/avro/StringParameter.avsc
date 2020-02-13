@@ -1,0 +1,18 @@
+{
+	"namespace": "io.keyko.monitoring.schemas",
+	"type": "record",
+	"name": "StringParameter",
+	"fields": [{
+			"name": "name",
+			"type": "string"
+		},
+		{
+			"name": "type",
+			"type": "string"
+		},
+		{
+			"name": "value",
+			"type": "string"
+		}
+	]
+}

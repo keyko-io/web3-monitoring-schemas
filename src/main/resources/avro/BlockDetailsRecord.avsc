@@ -1,0 +1,24 @@
+{
+	"namespace": "io.keyko.monitoring.schemas",
+	"type": "record",
+	"name": "BlockDetailsRecord",
+	"fields": [{
+			"name": "number",
+			"type": "string",
+			"java-class": "java.math.BigInteger"
+		},
+		{
+			"name": "hash",
+			"type": "string"
+		},
+		{
+			"name": "timestamp",
+			"type": "string",
+			"java-class": "timestamp-millis"
+		},
+		{
+			"name": "nodeName",
+			"type": "string"
+		}
+	]
+}

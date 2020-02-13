@@ -1,0 +1,37 @@
+{
+	"namespace": "io.keyko.monitoring.schemas",
+	"type": "record",
+	"name": "AlertRecord",
+	"fields": [{
+			"name": "name",
+			"type": "string"
+		},
+		{
+			"name": "reference",
+			"type": "string"
+		},
+		{
+			"name": "status",
+			"type": {
+				"name": "AlertEventStatus",
+				"type": "enum",
+				"symbols": [
+					"FATAL",
+					"ERROR",
+					"WARNING",
+					"INFO",
+					"DEBUG"
+				]
+			}
+		},
+		{
+			"name": "timestamp",
+			"type": "string",
+			"java-class": "timestamp-millis"
+		},
+		{
+			"name": "description",
+			"type": "string"
+		}
+	]
+}

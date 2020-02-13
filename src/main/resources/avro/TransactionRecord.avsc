@@ -1,0 +1,22 @@
+{
+	"namespace": "io.keyko.monitoring.schemas",
+	"type": "record",
+	"name": "TransactionRecord",
+	"fields": [{
+			"name": "id",
+			"type": "string"
+		},
+		{
+			"name": "type",
+			"type": "string"
+		},
+		{
+			"name": "details",
+			"type": "TransactionDetailsRecord"
+		},
+		{
+			"name": "retries",
+			"type": "int"
+		}
+	]
+}
