@@ -37,9 +37,16 @@ You can include the stubs generated with the schemas including the following dep
 
 The AVRO implementation of the schemas can be found in the **src/main/resources/avro/** folder. This are the schemas implemented:
 
-* AlertEvent.avsc
-* BlockEvent.avsc
-* ContractEvent.avsc
-* EventBlock.avsc
-* TransactionEvent.avsc
-
+* AlertRecord.avsc	
+* BlockDetailsRecord.avsc	
+* BlockRecord.avsc	
+* EventBlockRecord.avsc	
+* EventDetailsRecord.avsc	
+* EventRecord.avsc	
+* NumberParameter.avsc	
+* StringParameter.avsc	
+* TransactionDetailsRecord.avsc	
+* TransactionRecord.avsc	
+* ViewBlockRecord.avsc	
+* ViewDetailsRecord.avsc	
+* ViewRecord.avsc
