@@ -47,8 +47,7 @@
 		},
 		{
 			"name": "blockNumber",
-			"type": "string",
-			"java-class": "java.math.BigInteger"
+			"type": "long"
 		},
 		{
 			"name": "blockHash",
