@@ -4,8 +4,7 @@
 	"name": "BlockDetailsRecord",
 	"fields": [{
 			"name": "number",
-			"type": "string",
-			"java-class": "java.math.BigInteger"
+			"type": "long"
 		},
 		{
 			"name": "hash",
