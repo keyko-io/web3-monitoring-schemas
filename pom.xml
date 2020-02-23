@@ -7,7 +7,7 @@
     <groupId>io.keyko.monitoring</groupId>
     <artifactId>schemas</artifactId>
     <packaging>jar</packaging>
-    <version>0.2.2</version>
+    <version>0.2.3</version>
     <name>Web3 Monitoring Schemas</name>
     <url>https://github.com/keyko-io/web3-monitoring-schemas</url>
 
