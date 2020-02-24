@@ -13,7 +13,12 @@
 		{
 			"name": "value",
 			"type": "string",
+			"default": "",
 			"java-class": "java.math.BigInteger"
+		},
+		{
+			"name": "numberValue",
+			"type": "long"
 		}
 	]
 }
