@@ -21,147 +21,44 @@
       "type": "string"
     },
     {
-      "name": "output.input_0.numberValue",
-      "type": "long",
-      "default": 0
+      "name": "param_0",
+      "type": ["null","TimeSeriesParameter"]
     },
     {
-      "name": "output.input_0.value",
-      "type": ["null","string"]
+      "name": "param_1",
+      "type": ["null","TimeSeriesParameter"]
     },
     {
-      "name": "output.input_0.label",
-      "type": ["null","string"]
+      "name": "param_2",
+      "type": ["null","TimeSeriesParameter"]
     },
     {
-      "name": "output.input_1.numberValue",
-      "type": "long",
-      "default": 0
+      "name": "param_3",
+      "type": ["null","TimeSeriesParameter"]
     },
     {
-      "name": "output.input_1.value",
-      "type": ["null","string"]
+      "name": "param_4",
+      "type": ["null","TimeSeriesParameter"]
     },
     {
-      "name": "output.input_1.label",
-      "type": ["null","string"]
+      "name": "param_5",
+      "type": ["null","TimeSeriesParameter"]
     },
     {
-      "name": "output.input_2.numberValue",
-      "type": "long",
-      "default": 0
+      "name": "param_6",
+      "type": ["null","TimeSeriesParameter"]
     },
     {
-      "name": "output.input_2.value",
-      "type": ["null","string"]
+      "name": "param_7",
+      "type": ["null","TimeSeriesParameter"]
     },
     {
-      "name": "output.input_2.label",
-      "type": ["null","string"]
+      "name": "param_8",
+      "type": ["null","TimeSeriesParameter"]
     },
     {
-      "name": "output.input_3.numberValue",
-      "type": "long",
-      "default": 0
-    },
-    {
-      "name": "output.input_3.value",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_3.label",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_4.numberValue",
-      "type": "long",
-      "default": 0
-    },
-    {
-      "name": "output.input_4.value",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_4.label",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_5.numberValue",
-      "type": "long",
-      "default": 0
-    },
-    {
-      "name": "output.input_5.value",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_5.label",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_6.numberValue",
-      "type": "long",
-      "default": 0
-    },
-    {
-      "name": "output.input_6.value",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_6.label",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_7.numberValue",
-      "type": "long",
-      "default": 0
-    },
-    {
-      "name": "output.input_7.value",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_7.label",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_8.numberValue",
-      "type": "long",
-      "default": 0
-    },
-    {
-      "name": "output.input_8.value",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_8.label",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_9.numberValue",
-      "type": "long",
-      "default": 0
-    },
-    {
-      "name": "output.input_9.value",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_9.label",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_10.numberValue",
-      "type": "long",
-      "default": 0
-    },
-    {
-      "name": "output.input_10.value",
-      "type": ["null","string"]
-    },
-    {
-      "name": "output.input_10.label",
-      "type": ["null","string"]
+      "name": "param_9",
+      "type": ["null","TimeSeriesParameter"]
     }
 
   ]

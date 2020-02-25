@@ -1,0 +1,19 @@
+{
+  "namespace": "io.keyko.monitoring.schemas",
+  "type": "record",
+  "name": "TimeSeriesParameter",
+  "fields": [{
+    "name": "value",
+    "type": ["null","string"]
+  },
+    {
+      "name": "numberValue",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "label",
+      "type": ["null","string"]
+    }
+  ]
+}
