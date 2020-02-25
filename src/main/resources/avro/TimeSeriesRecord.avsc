@@ -1,0 +1,65 @@
+{
+  "namespace": "io.keyko.monitoring.schemas",
+  "type": "record",
+  "name": "TimeSeriesRecord",
+  "fields": [
+    {
+      "name": "blockNumber",
+      "type": "long"
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "logicalType": "timestamp-millis"
+    },
+    {
+      "name": "methodName",
+      "type": "string"
+    },
+    {
+      "name": "contractName",
+      "type": "string"
+    },
+    {
+      "name": "param_0",
+      "type": ["null","TimeSeriesParameter"]
+    },
+    {
+      "name": "param_1",
+      "type": ["null","TimeSeriesParameter"]
+    },
+    {
+      "name": "param_2",
+      "type": ["null","TimeSeriesParameter"]
+    },
+    {
+      "name": "param_3",
+      "type": ["null","TimeSeriesParameter"]
+    },
+    {
+      "name": "param_4",
+      "type": ["null","TimeSeriesParameter"]
+    },
+    {
+      "name": "param_5",
+      "type": ["null","TimeSeriesParameter"]
+    },
+    {
+      "name": "param_6",
+      "type": ["null","TimeSeriesParameter"]
+    },
+    {
+      "name": "param_7",
+      "type": ["null","TimeSeriesParameter"]
+    },
+    {
+      "name": "param_8",
+      "type": ["null","TimeSeriesParameter"]
+    },
+    {
+      "name": "param_9",
+      "type": ["null","TimeSeriesParameter"]
+    }
+
+  ]
+}
