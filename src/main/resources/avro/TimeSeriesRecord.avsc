@@ -8,7 +8,7 @@
       "type": "long"
     },
     {
-      "timestamp": "timestamp",
+      "name": "timestamp",
       "type": "long",
       "logicalType": "timestamp-millis"
     },
