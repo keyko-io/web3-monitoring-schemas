@@ -13,7 +13,9 @@
     },
     {
       "name": "label",
-      "type": ["null","string"]
+      "type": "string",
+      "default": ""
+
     }
   ]
 }
