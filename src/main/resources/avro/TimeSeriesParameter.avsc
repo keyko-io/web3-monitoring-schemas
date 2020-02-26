@@ -4,7 +4,8 @@
   "name": "TimeSeriesParameter",
   "fields": [{
     "name": "value",
-    "type": ["null","string"]
+    "type": "string",
+    "default": ""
   },
     {
       "name": "numberValue",
