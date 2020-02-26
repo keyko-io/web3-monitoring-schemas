@@ -2,6 +2,18 @@ History
 =======
 
 
+0.2.5 (2020-02)
+------------------
+
+* Changing the default option in `TimeSeriesParameter`
+
+
+0.2.4 (2020-02)
+------------------
+
+* Added `TimeSeriesRecord` schemas
+
+
 0.2.3 (2020-02)
 ------------------
 
