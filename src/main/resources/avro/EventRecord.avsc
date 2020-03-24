@@ -61,7 +61,13 @@
 		},
 		{
 			"name": "status",
-			"type": "ContractEventStatus"
+			"type": {
+				"name": "ContractEventStatus",
+				"type": "enum",
+				"symbols": [
+					"UNCONFIRMED", "CONFIRMED", "INVALIDATED"
+				]
+			}
 		},
 		{
 			"name": "eventSpecificationSignature",
