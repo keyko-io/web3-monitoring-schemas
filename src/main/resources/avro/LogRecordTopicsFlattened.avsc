@@ -61,15 +61,7 @@
 		},
 		{
 			"name": "status",
-			"type": {
-				"name": "ContractEventStatus",
-				"type": "enum",
-				"symbols": [
-					"UNCONFIRMED",
-					"CONFIRMED",
-					"INVALIDATED"
-				]
-			}
+			"type": "ContractEventStatus"
 		},
 		{
 			"name": "retries",

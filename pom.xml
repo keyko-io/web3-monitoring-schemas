@@ -99,12 +99,14 @@
                                 <include>**/*.avsc</include>
                             </includes>
                             <imports>
+                                <import>${project.basedir}/src/main/resources/avro/ContractEventStatus.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/NumberParameter.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/StringParameter.avsc</import>
-                                <import>${project.basedir}/src/main/resources/avro/ViewDetailsRecord.avsc</import>
-                                <import>${project.basedir}/src/main/resources/avro/BlockDetailsRecord.avsc</import>
-                                <import>${project.basedir}/src/main/resources/avro/EventDetailsRecord.avsc</import>
-                                <import>${project.basedir}/src/main/resources/avro/TransactionDetailsRecord.avsc</import>
+                                <import>${project.basedir}/src/main/resources/avro/ViewRecord.avsc</import>
+                                <import>${project.basedir}/src/main/resources/avro/BlockRecord.avsc</import>
+                                <import>${project.basedir}/src/main/resources/avro/EventsRecord.avsc</import>
+                                <import>${project.basedir}/src/main/resources/avro/LogRecordRecord.avsc</import>
+                                <import>${project.basedir}/src/main/resources/avro/TransactionRecord.avsc</import>
                             </imports>
                         </configuration>
                     </execution>

@@ -49,10 +49,6 @@
 			"type": "string"
 		},
 		{
-			"name": "id",
-			"type": "string"
-		},
-		{
 			"name": "retries",
 			"type": "int"
 		}
