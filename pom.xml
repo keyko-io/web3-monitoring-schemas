@@ -7,7 +7,7 @@
     <groupId>io.keyko.monitoring</groupId>
     <artifactId>schemas</artifactId>
     <packaging>jar</packaging>
-    <version>0.3.0</version>
+    <version>0.3.1</version>
     <name>Web3 Monitoring Schemas</name>
     <url>https://github.com/keyko-io/web3-monitoring-schemas</url>
 
@@ -99,12 +99,11 @@
                                 <include>**/*.avsc</include>
                             </includes>
                             <imports>
-                                <import>${project.basedir}/src/main/resources/avro/ContractEventStatus.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/NumberParameter.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/StringParameter.avsc</import>
+                                <import>${project.basedir}/src/main/resources/avro/EventsRecord.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/ViewRecord.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/BlockRecord.avsc</import>
-                                <import>${project.basedir}/src/main/resources/avro/EventsRecord.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/LogRecordRecord.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/TransactionRecord.avsc</import>
                             </imports>
