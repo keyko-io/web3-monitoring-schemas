@@ -7,16 +7,12 @@
 			"type": "string"
 		},
 		{
-			"name": "type",
-			"type": "string"
+			"name": "event",
+			"type": "EventRecord"
 		},
 		{
-			"name": "details",
-			"type": "EventDetailsRecord"
-		},
-		{
-			"name": "detailsBlock",
-			"type": "BlockDetailsRecord"
+			"name": "block",
+			"type": "BlockRecord"
 		},
 		{
 			"name": "retries",

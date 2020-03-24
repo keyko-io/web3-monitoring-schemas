@@ -1,8 +1,11 @@
 {
 	"namespace": "io.keyko.monitoring.schemas",
 	"type": "record",
-	"name": "LogDetailsRecord",
-	"fields": [
+	"name": "LogRecordTopicsFlattened",
+	"fields": [{
+		"name": "id",
+		"type": "string"
+		},
 		{
 			"name": "nodeName",
 			"type": "string"
@@ -12,11 +15,24 @@
 			"type":"string"
 		},
 		{
-			"name": "topics",
-			"type": {
-				"type": "array",
-				"items": ["string"]
-			}
+			"name": "topic0",
+			"type": "string",
+			"default": ""
+		},
+		{
+			"name": "topic1",
+			"type": "string",
+			"default": ""
+		},
+		{
+			"name": "topic2",
+			"type": "string",
+			"default": ""
+		},
+		{
+			"name": "topic3",
+			"type": "string",
+			"default": ""
 		},
 		{
 			"name": "transactionHash",
@@ -44,8 +60,12 @@
 			"type": "string"
 		},
 		{
-			"name": "id",
-			"type": "string"
+			"name": "status",
+			"type": "ContractEventStatus"
+		},
+		{
+			"name": "retries",
+			"type": "int"
 		}
 	]
 }
