@@ -1,7 +1,7 @@
 {
 	"namespace": "io.keyko.monitoring.schemas",
 	"type": "record",
-	"name": "LogDetailsRecord",
+	"name": "LogDetailsRecordPostgres",
 	"fields": [
 		{
 			"name": "nodeName",
@@ -12,12 +12,24 @@
 			"type":"string"
 		},
 		{
-			"name": "topics",
-			"type": {
-				"name": "topic",
-				"type": "array",
-				"items": "string"
-			}
+			"name": "topic0",
+			"type": "string",
+			"default": ""
+		},
+		{
+			"name": "topic1",
+			"type": "string",
+			"default": ""
+		},
+		{
+			"name": "topic2",
+			"type": "string",
+			"default": ""
+		},
+		{
+			"name": "topic3",
+			"type": "string",
+			"default": ""
 		},
 		{
 			"name": "transactionHash",
