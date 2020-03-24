@@ -2,17 +2,55 @@
 	"namespace": "io.keyko.monitoring.schemas",
 	"type": "record",
 	"name": "ViewRecord",
-	"fields": [{
+	"fields": [
+		{
 			"name": "id",
 			"type": "string"
 		},
 		{
-			"name": "type",
+			"name": "name",
 			"type": "string"
 		},
 		{
-			"name": "details",
-			"type": "ViewDetailsRecord"
+			"name": "contractName",
+			"type": "string",
+			"default": ""
+		},
+		{
+			"name": "filterId",
+			"type": "string"
+		},
+		{
+			"name": "nodeName",
+			"type": "string"
+		},
+		{
+			"name": "output",
+			"type": {
+				"type": "array",
+				"items": ["StringParameter", "NumberParameter"]
+			}
+		},
+
+		{
+			"name": "blockNumber",
+			"type": "long"
+		},
+		{
+			"name": "blockHash",
+			"type": "string"
+		},
+		{
+			"name": "address",
+			"type": "string"
+		},
+		{
+			"name": "networkName",
+			"type": "string"
+		},
+		{
+			"name": "id",
+			"type": "string"
 		},
 		{
 			"name": "retries",

@@ -7,12 +7,81 @@
 			"type": "string"
 		},
 		{
-			"name": "type",
+			"name": "name",
 			"type": "string"
 		},
 		{
-			"name": "details",
-			"type": "EventDetailsRecord"
+			"name": "contractName",
+			"type": "string",
+			"default": ""
+		},
+		{
+			"name": "filterId",
+			"type": "string"
+		},
+		{
+			"name": "nodeName",
+			"type": "string"
+		},
+		{
+			"name": "indexedParameters",
+			"type": {
+				"type": "array",
+				"items": ["StringParameter", "NumberParameter"]
+			}
+		},
+
+		{
+			"name": "nonIndexedParameters",
+			"type": {
+				"type": "array",
+				"items": ["StringParameter", "NumberParameter"]
+			}
+		},
+		{
+			"name": "transactionHash",
+			"type": "string"
+		},
+		{
+			"name": "logIndex",
+			"type": "string",
+			"java-class": "java.math.BigInteger"
+		},
+		{
+			"name": "blockNumber",
+			"type": "long"
+		},
+		{
+			"name": "blockHash",
+			"type": "string"
+		},
+		{
+			"name": "address",
+			"type": "string"
+		},
+		{
+			"name": "status",
+			"type": {
+				"name": "ContractEventStatus",
+				"type": "enum",
+				"symbols": [
+					"UNCONFIRMED",
+					"CONFIRMED",
+					"INVALIDATED"
+				]
+			}
+		},
+		{
+			"name": "eventSpecificationSignature",
+			"type": "string"
+		},
+		{
+			"name": "networkName",
+			"type": "string"
+		},
+		{
+			"name": "id",
+			"type": "string"
 		},
 		{
 			"name": "retries",

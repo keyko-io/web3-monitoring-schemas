@@ -7,12 +7,57 @@
 		"type": "string"
 		},
 		{
-			"name": "type",
+			"name": "nodeName",
 			"type": "string"
 		},
 		{
-			"name": "details",
-			"type": "LogDetailsRecord"
+			"name": "data",
+			"type":"string"
+		},
+		{
+			"name": "topics",
+			"type": {
+				"name": "topic",
+				"type": "array",
+				"items": "string"
+			}
+		},
+		{
+			"name": "transactionHash",
+			"type": "string"
+		},
+		{
+			"name": "logIndex",
+			"type": "string",
+			"java-class": "java.math.BigInteger"
+		},
+		{
+			"name": "blockNumber",
+			"type": "long"
+		},
+		{
+			"name": "blockHash",
+			"type": "string"
+		},
+		{
+			"name": "address",
+			"type": "string"
+		},
+		{
+			"name": "networkName",
+			"type": "string"
+		},
+		{
+			"name": "status",
+			"type": {
+				"name": "ContractEventStatus",
+				"type": "enum",
+				"symbols": [
+					"UNCONFIRMED",
+					"CONFIRMED",
+					"INVALIDATED"
+				]
+			}
 		},
 		{
 			"name": "retries",

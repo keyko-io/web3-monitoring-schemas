@@ -7,12 +7,62 @@
 			"type": "string"
 		},
 		{
-			"name": "type",
+			"name": "hash",
 			"type": "string"
 		},
 		{
-			"name": "details",
-			"type": "TransactionDetailsRecord"
+			"name": "nonce",
+			"type": "string"
+		},
+		{
+			"name": "blockNumber",
+			"type": "long"
+		},
+		{
+			"name": "blockHash",
+			"type": "string"
+		},
+		{
+			"name": "transactionIndex",
+			"type": "string"
+		},
+		{
+			"name": "from",
+			"type": "string"
+		},
+		{
+			"name": "to",
+			"type": "string"
+		},
+		{
+			"name": "value",
+			"type": "string"
+		},
+		{
+			"name": "nodeName",
+			"type": "string"
+		},
+		{
+			"name": "contractAddress",
+			"type": "string"
+		},
+		{
+			"name": "input",
+			"type": "string"
+		},
+		{
+			"name": "revertReason",
+			"type": "string"
+		},
+		{
+			"name": "status",
+			"type": {
+				"name": "TransactionStatus",
+				"type": "enum",
+				"symbols": [
+					"UNCONFIRMED", "CONFIRMED", "INVALIDATED", "FAILED"
+				]
+			}
 		},
 		{
 			"name": "retries",

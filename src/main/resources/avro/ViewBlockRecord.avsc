@@ -7,16 +7,12 @@
 			"type": "string"
 		},
 		{
-			"name": "type",
-			"type": "string"
+			"name": "view",
+			"type": "ViewRecord"
 		},
 		{
-			"name": "details",
-			"type": "ViewDetailsRecord"
-		},
-		{
-			"name": "detailsBlock",
-			"type": "BlockDetailsRecord"
+			"name": "block",
+			"type": "BlockRecord"
 		},
 		{
 			"name": "retries",

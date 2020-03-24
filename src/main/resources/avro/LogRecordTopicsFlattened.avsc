@@ -1,40 +1,38 @@
 {
 	"namespace": "io.keyko.monitoring.schemas",
 	"type": "record",
-	"name": "EventDetailsRecord",
-	"fields": [
-
-		{
-			"name": "name",
-			"type": "string"
-		},
-		{
-			"name": "contractName",
-			"type": "string",
-			"default": ""
-		},
-		{
-			"name": "filterId",
-			"type": "string"
+	"name": "LogRecordTopicsFlattened",
+	"fields": [{
+		"name": "id",
+		"type": "string"
 		},
 		{
 			"name": "nodeName",
 			"type": "string"
 		},
 		{
-			"name": "indexedParameters",
-			"type": {
-				"type": "array",
-				"items": ["StringParameter", "NumberParameter"]
-			}
+			"name": "data",
+			"type":"string"
 		},
-
 		{
-			"name": "nonIndexedParameters",
-			"type": {
-				"type": "array",
-				"items": ["StringParameter", "NumberParameter"]
-			}
+			"name": "topic0",
+			"type": "string",
+			"default": ""
+		},
+		{
+			"name": "topic1",
+			"type": "string",
+			"default": ""
+		},
+		{
+			"name": "topic2",
+			"type": "string",
+			"default": ""
+		},
+		{
+			"name": "topic3",
+			"type": "string",
+			"default": ""
 		},
 		{
 			"name": "transactionHash",
@@ -58,6 +56,10 @@
 			"type": "string"
 		},
 		{
+			"name": "networkName",
+			"type": "string"
+		},
+		{
 			"name": "status",
 			"type": {
 				"name": "ContractEventStatus",
@@ -70,16 +72,8 @@
 			}
 		},
 		{
-			"name": "eventSpecificationSignature",
-			"type": "string"
-		},
-		{
-			"name": "networkName",
-			"type": "string"
-		},
-		{
-			"name": "id",
-			"type": "string"
+			"name": "retries",
+			"type": "int"
 		}
 	]
 }
