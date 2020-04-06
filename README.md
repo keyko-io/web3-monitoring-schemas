@@ -41,6 +41,7 @@ The AVRO implementation of the schemas can be found in the **src/main/resources/
 * BlockRecord.avsc	
 * EventBlockRecord.avsc	
 * EventRecord.avsc	
+* FlatEventRecord.avsc	
 * LogRecord.avsc
 * LogRecordTopicsFlattened.avsc
 * NumberParameter.avsc	
