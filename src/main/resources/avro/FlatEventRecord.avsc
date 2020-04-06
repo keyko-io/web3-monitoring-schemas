@@ -1,7 +1,7 @@
 {
   "namespace": "io.keyko.monitoring.schemas",
   "type": "record",
-  "name": "EventRecord",
+  "name": "FlatEventRecord",
   "fields": [
     {
       "name": "id",
@@ -183,7 +183,7 @@
     {
       "name": "status",
       "type": {
-        "name": "ContractEventStatus",
+        "name": "FlatContractEventStatus",
         "type": "enum",
         "symbols": [
           "UNCONFIRMED",
