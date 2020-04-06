@@ -1,22 +1,213 @@
 {
-	"namespace": "io.keyko.monitoring.schemas",
-	"type": "record",
-	"name": "FlatEventBlockRecord",
-	"fields": [{
-			"name": "id",
-			"type": "string"
-		},
-		{
-			"name": "event",
-			"type": "FlatEventRecord"
-		},
-		{
-			"name": "block",
-			"type": "BlockRecord"
-		},
-		{
-			"name": "retries",
-			"type": "int"
-		}
-	]
+  "namespace": "io.keyko.monitoring.schemas",
+  "type": "record",
+  "name": "FlatEventBlockRecord",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "contractName",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "filterId",
+      "type": "string"
+    },
+    {
+      "name": "nodeName",
+      "type": "string"
+    },
+    {
+      "name": "indexed_param_name_0",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "indexed_param_type_0",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "indexed_param_value_0",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "indexed_param_name_1",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "indexed_param_type_1",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "indexed_param_value_1",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "indexed_param_name_2",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "indexed_param_type_2",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "indexed_param_value_2",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "indexed_param_name_3",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "indexed_param_type_3",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "indexed_param_value_3",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_name_0",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_type_0",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_value_0",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_name_1",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_type_1",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_value_1",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_name_2",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_type_2",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_value_2",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_name_3",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_type_3",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_value_3",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_name_4",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_type_4",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "non_indexed_param_value_4",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "transactionHash",
+      "type": "string"
+    },
+    {
+      "name": "logIndex",
+      "type": "string",
+      "java-class": "java.math.BigInteger"
+    },
+    {
+      "name": "blockNumber",
+      "type": "long"
+    },
+    {
+      "name": "blockHash",
+      "type": "string"
+    },
+    {
+      "name": "address",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": {
+        "name": "FlatContractEventBlockStatus",
+        "type": "enum",
+        "symbols": [
+          "UNCONFIRMED",
+          "CONFIRMED",
+          "INVALIDATED"
+        ]
+      }
+    },
+    {
+      "name": "eventSpecificationSignature",
+      "type": "string"
+    },
+    {
+      "name": "networkName",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "logicalType": "timestamp-millis"
+ 	},
+    {
+      "name": "retries",
+      "type": "int"
+    }
+  ]
 }
