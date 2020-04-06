@@ -1,0 +1,22 @@
+{
+	"namespace": "io.keyko.monitoring.schemas",
+	"type": "record",
+	"name": "FlatEventBlockRecord",
+	"fields": [{
+			"name": "id",
+			"type": "string"
+		},
+		{
+			"name": "event",
+			"type": "FlatEventRecord"
+		},
+		{
+			"name": "block",
+			"type": "BlockRecord"
+		},
+		{
+			"name": "retries",
+			"type": "int"
+		}
+	]
+}

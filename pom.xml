@@ -7,7 +7,7 @@
     <groupId>io.keyko.monitoring</groupId>
     <artifactId>schemas</artifactId>
     <packaging>jar</packaging>
-    <version>0.3.2</version>
+    <version>0.3.3</version>
     <name>Web3 Monitoring Schemas</name>
     <url>https://github.com/keyko-io/web3-monitoring-schemas</url>
 
@@ -105,6 +105,8 @@
                                 <import>${project.basedir}/src/main/resources/avro/FlatEventRecord.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/ViewRecord.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/BlockRecord.avsc</import>
+                                <import>${project.basedir}/src/main/resources/avro/FlatEventBlockRecord.avsc</import>
+                                <import>${project.basedir}/src/main/resources/avro/EventBlockRecord.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/LogRecordRecord.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/TransactionRecord.avsc</import>
                             </imports>
