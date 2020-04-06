@@ -101,7 +101,8 @@
                             <imports>
                                 <import>${project.basedir}/src/main/resources/avro/NumberParameter.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/StringParameter.avsc</import>
-                                <import>${project.basedir}/src/main/resources/avro/EventsRecord.avsc</import>
+                                <import>${project.basedir}/src/main/resources/avro/EventRecord.avsc</import>
+                                <import>${project.basedir}/src/main/resources/avro/FlatEventRecord.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/ViewRecord.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/BlockRecord.avsc</import>
                                 <import>${project.basedir}/src/main/resources/avro/LogRecordRecord.avsc</import>
