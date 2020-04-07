@@ -26,138 +26,138 @@
     },
     {
       "name": "indexed_param_name_0",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "indexed_param_type_0",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "indexed_param_value_0",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "indexed_param_name_1",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "indexed_param_type_1",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "indexed_param_value_1",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "indexed_param_name_2",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "indexed_param_type_2",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "indexed_param_value_2",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "indexed_param_name_3",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "indexed_param_type_3",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "indexed_param_value_3",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_name_0",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_type_0",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_value_0",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_name_1",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_type_1",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_value_1",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_name_2",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_type_2",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_value_2",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_name_3",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_type_3",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_value_3",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_name_4",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_type_4",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "non_indexed_param_value_4",
-      "type": "string",
-      "default": ""
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "transactionHash",
