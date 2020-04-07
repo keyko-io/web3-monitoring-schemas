@@ -16,22 +16,22 @@
 		},
 		{
 			"name": "topic0",
-			"type": "string",
+			"type": ["null", "string"],
 			"default": ""
 		},
 		{
 			"name": "topic1",
-			"type": "string",
+			"type": ["null", "string"],
 			"default": ""
 		},
 		{
 			"name": "topic2",
-			"type": "string",
+			"type": ["null", "string"],
 			"default": ""
 		},
 		{
 			"name": "topic3",
-			"type": "string",
+			"type": ["null", "string"],
 			"default": ""
 		},
 		{
