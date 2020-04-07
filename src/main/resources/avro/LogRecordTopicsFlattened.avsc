@@ -17,22 +17,22 @@
 		{
 			"name": "topic0",
 			"type": ["null", "string"],
-			"default": ""
+			"default": null
 		},
 		{
 			"name": "topic1",
 			"type": ["null", "string"],
-			"default": ""
+			"default": null
 		},
 		{
 			"name": "topic2",
 			"type": ["null", "string"],
-			"default": ""
+			"default": null
 		},
 		{
 			"name": "topic3",
 			"type": ["null", "string"],
-			"default": ""
+			"default": null
 		},
 		{
 			"name": "transactionHash",
